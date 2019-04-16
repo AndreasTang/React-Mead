@@ -1,0 +1,32 @@
+.add-store {
+    display: flex;
+    padding: $m-size;
+    flex-direction: column;
+}
+
+.add-store__input {
+    background: $dark-blue;
+    border: none;
+    border-bottom: .3rem solid darken($dark-blue, 10%);
+    flex-grow: 1;
+    color: $off-white;
+    margin: 0 0 $s-size 0;
+    padding: $s-size;
+}
+
+.add-store-error {
+    color: $off-white;
+    font-style: italic;
+    margin: $m-size 0 0 0;
+    padding: 0 $m-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .add-store {
+        flex-direction: row;
+    }
+
+    .add-store__input {
+        margin: 0 $s-size 0 0;
+    }
+}
