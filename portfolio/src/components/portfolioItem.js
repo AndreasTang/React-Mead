@@ -1,11 +1,11 @@
 import React from 'react'
-import Portfolio from './Portfolio'
+import {Link} from 'react-router-dom'
 
 const Item = (props) => (
     <div>
-    <Portfolio/>
-        <h1>Project: Testing</h1>
+        <h1>Project: {props.match.params.id}</h1>
         <p>the id is {props.match.params.id}</p>
+        <Link to="/portfolio">Go Back</Link>
     </div>
 )
 
