@@ -1,10 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Home from '../components/home'
-import Contect from '../components/contect'
-import Header from '../components/header'
-import NotFoundPage from '../components/notFoundPage'
-import Item from '../components/portfolioItem';
+import Home from '../components/Home'
+import Contect from '../components/Contect'
+import Header from '../components/Header'
+import NotFoundPage from '../components/NotFoundPage'
+import Item from '../components/PortfolioItem';
+import Portfolio from '../components/Portfolio';
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -12,6 +13,7 @@ const AppRouter = () => (
             <Header />
             <Switch>
                 <Route path="/" exact component={Home} />
+                <Route path="/portfolio" exact component={Portfolio}></Route>
                 <Route path="/portfolio/:id" component={Item} />
                 <Route path="/contect" component={Contect} />
                 <Route component={NotFoundPage} />

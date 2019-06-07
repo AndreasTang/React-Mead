@@ -1,10 +1,12 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
-const Portfolio = (props) => {
+const Portfolio = () => {
     return (
         <div>
             <h1>Protfolio</h1>
+            <p><Link to="/portfolio/1">Project1</Link></p>
+            <p><Link to="/portfolio/2">Project2</Link></p>
         </div>
     )
 }
