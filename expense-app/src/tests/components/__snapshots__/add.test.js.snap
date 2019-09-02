@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing should render Add page correctly 1`] = `
+<div>
+  <DamgeForm
+    onSubmit={[Function]}
+  />
+</div>
+`;

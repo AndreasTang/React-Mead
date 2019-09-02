@@ -1,16 +1,12 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { removeDamge } from '../actions/damge'
+import { NavLink } from 'react-router-dom'
 
-const DamgeListItem = ({ dispatch, description, amount, createAt, id }) => (
+const DamgeListItem = ({ description, amount, createdAt, id }) => (
     <div>
-        <p>Description: {description}</p>
+        <NavLink to={`/edit/${id}`}><p>Description: {description}</p></NavLink>
         <p>Amount: {amount}</p>
-        <p>CreateAt: {createAt}</p>
-        <button onClick = {() => {
-            dispatch(removeDamge({ id }))
-        }}>Remove</button>
+        <p>CreateAt: {createdAt}</p>
     </div>
 )
 
-export default connect()(DamgeListItem)
+export default DamgeListItem

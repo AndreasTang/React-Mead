@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing should DamgeList component render currectly 1`] = `
+<div>
+  <h1>
+    Damge List
+  </h1>
+  <DamgeListItem
+    amount={10}
+    createdAt={-432000000}
+    description="kicks"
+    id="1"
+    key="1"
+    note=""
+  />
+  <DamgeListItem
+    amount={150}
+    createdAt={172800000}
+    description="slash"
+    id="2"
+    key="2"
+    note=""
+  />
+  <DamgeListItem
+    amount={100}
+    createdAt={"1970-01-01T00:00:00.000Z"}
+    description="cut"
+    id="3"
+    key="3"
+    note=""
+  />
+</div>
+`;
+
+exports[`Testing should DamgeList component render currectly if there are no data 1`] = `
+<div>
+  <h1>
+    Damge List
+  </h1>
+  <p>
+    No Damge
+  </p>
+</div>
+`;

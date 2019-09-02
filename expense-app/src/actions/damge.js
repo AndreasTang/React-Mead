@@ -1,13 +1,13 @@
 import uuid from 'uuid'
 
-const addDamge = ({ description = '', note = '', amount = '', createAt = 0 } = {}) => ({
+const addDamge = ({ description = '', note = '', amount = '', createdAt = 0 } = {}) => ({
     type: 'ADD_DAMGE',
     damge: {
         id: uuid(),
         description,
         note,
         amount,
-        createAt
+        createdAt
     }
 })
 
@@ -16,11 +16,11 @@ const removeDamge = ({ id } = {}) => ({
     id
 })
 
-const editDamgeAmount = (id, damgeAmount ) => ({
+const editDamge = (id, editDamge ) => ({
     type: 'EDIT_DAMGEAMOUNT',
     id,
-    damgeAmount
+    editDamge
 })
 
 
-export { addDamge, removeDamge, editDamgeAmount }
+export { addDamge, removeDamge, editDamge }

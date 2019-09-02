@@ -13,7 +13,7 @@ const damgeReducer = (state = damgeReducerDefaultState, action) => {
                 if (damge.id === action.id) {
                     return {
                         ...damge,
-                        ...action.damgeAmount
+                        ...action.editDamge
                     }
                 } else {
                     return damge

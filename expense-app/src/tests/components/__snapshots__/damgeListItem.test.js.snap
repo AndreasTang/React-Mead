@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing should DamgeListItem render currectly 1`] = `
+<div>
+  <NavLink
+    to="/edit/1"
+  >
+    <p>
+      Description: 
+      kicks
+    </p>
+  </NavLink>
+  <p>
+    Amount: 
+    10
+  </p>
+  <p>
+    CreateAt: 
+    -432000000
+  </p>
+</div>
+`;

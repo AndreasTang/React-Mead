@@ -8,12 +8,13 @@ import { editFilterText } from './actions/filter'
 import AppRouter from './routers/AppRouter'
 import './styles/styles.scss'
 import 'normalize.css/normalize.css'
+import 'react-dates/lib/css/_datepicker.css'
 
 const store = configureStore()
 
-store.dispatch(addDamge({description: 'face pouch', note: 'one', amount: 5, createAt:200}))
-store.dispatch(addDamge({description: 'leg kick', note: 'two', amount: 40, createAt:1000}))
-store.dispatch(addDamge({description: 'knife slash', note: 'three', amount: 25, createAt:2140}))
+store.dispatch(addDamge({description: 'face pouch', note: 'one', amount: 5, createdAt:200}))
+store.dispatch(addDamge({description: 'leg kick', note: 'two', amount: 40, createdAt:1000}))
+store.dispatch(addDamge({description: 'knife slash', note: 'three', amount: 25, createdAt:2140}))
 store.dispatch(editFilterText('pouch'))
 
 const state = store.getState()

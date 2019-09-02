@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing should Edit page render correctly 1`] = `
+<div>
+  <DamgeForm
+    damge={
+      Object {
+        "amount": 10,
+        "createdAt": -432000000,
+        "description": "kicks",
+        "id": "1",
+        "note": "",
+      }
+    }
+    onSubmit={[Function]}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+</div>
+`;

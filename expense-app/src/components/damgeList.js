@@ -6,9 +6,14 @@ import getVisibleDamge from '../selectors/damge'
 const DamgeList = (props) => (
     <div>
         <h1>Damge List</h1>
-        {props.damge.map((damgeItem) => {
-            return <DamgeListItem key = {damgeItem.id} {...damgeItem} />
-        })}
+        {props.damge.length === 0 ? (
+            <p>No Damge</p>
+        ) : (
+            props.damge.map((damgeItem) => {
+                return <DamgeListItem key = {damgeItem.id} {...damgeItem} />
+            })
+        )}
+        
     </div>
 )
 
@@ -18,4 +23,5 @@ const mapStateToProps = (state) => {
     }
 }
 
+export { DamgeList }
 export default connect(mapStateToProps)(DamgeList)
